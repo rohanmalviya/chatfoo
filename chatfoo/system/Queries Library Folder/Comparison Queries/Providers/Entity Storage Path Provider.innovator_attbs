@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'Entity Storage Path Provider')
+#Thu Mar 01 14:19:59 CST 2012
+contentType=Provider
+guid=M0f1zzL2JsS89MvN64CGZGyc9Xe
+innovatorDisplayName=Entity Storage Path Provider
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=Generic

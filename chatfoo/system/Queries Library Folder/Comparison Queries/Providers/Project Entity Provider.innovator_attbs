@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'Project Entity Provider')
+#Thu Mar 01 14:19:59 CST 2012
+contentType=Provider
+guid=OVG7mRkwjKIjxyabwsYH3qOslqP
+innovatorDisplayName=Project Entity Provider
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=SRL
+type=String
