@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='Ruleset Template'>
+ <ide-name>Ruleset Template</ide-name>
+ <display-name>SmartForms Ruleset Template</display-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter name='NameVH' type='FiEdRbHdEgQpJnblaxjHwfdhuwV.template2' ideName='NameVH'>
+  </parameter>
+  <parameter name='DocumentTypeVH' type='OVtBbtYCgHvo0s0AB6XXVdmAyDb' ideName='DocumentTypeVH'>
+  </parameter>
+  <parameter-list name='RulesetParameterArrayVH' type='6wUSnqVlOSA3489uRpixAYg8QX9' ideName='RulesetParameterArrayVH' min='0'>
+  </parameter-list>
+  <parameter-list name='RulesetVariableVH' type='6wUSnqVlOSA3489uRpixAYg8QX9' ideName='RulesetVariableArrayVH' displayName='Ruleset Variables' min='0'>
+  </parameter-list>
+  <parameter-list name='RulesArrayVH' type='A9ldeO5Mwp9lVK1oe2K03PFlzk2' ideName='RulesArrayVH' displayName='' min='0'>
+  </parameter-list>
+  <parameter name='CommentsVH' type='string' ideName='CommentsVH'>
+  </parameter>
+  <parameter name='ExecModeVH' type='LMohfEyxdl2PKJXHwQIimgMNmw1' ideName='ExecModeVH'>
+  </parameter>
+  <parameter name='Value Holder1' type='FiEdRbHdEgQpJnblaxjHwfdhuwV.template1' ideName='RuleCountVH'>
+  </parameter>
+  <parameter name='__ENTITY_PROPERTIES__VH__' type='35PcpILd7scwQCfKJ08yl6m4eqU' ideName='Management Properties'>
+  </parameter>
+ </parameters>
+ <family>SmartForms Ruleset Template</family>
+ <template:content xmlns:template='http://www.blazesoft.com/template' xmlns='http://www.blazesoft.com/display' section='display'><![CDATA[<table width="80%"><tr><td><b>]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.smartforms.providers.strings</template:arg>
+   <template:arg name='string-name'>ExecutionMode</template:arg>
+  </template:static_placeholder><![CDATA[ : </b>]]><placeholder ref='ExecModeVH' relative='false'>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>readWriteProperty</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>linkSupport</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+  </placeholder><![CDATA[</td>]]><template:if>
+   <template:test><template:placeholder ref='Value Holder1' relative='false'/><![CDATA[ < 1]]></template:test>
+   <template:then><![CDATA[<td><b>]]><template:static_placeholder type='localizedstring'>
+     <template:arg name='resource-bundle'>com.blazesoft.smartforms.providers.strings</template:arg>
+     <template:arg name='string-name'>DocumentType</template:arg>
+    </template:static_placeholder><![CDATA[ : </b>]]><placeholder ref='DocumentTypeVH.AdvisorClassNameVH' relative='false'>
+     <attribute>
+      <attribute-name>none</attribute-name>
+      <attribute-value>none</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>rangeRole</attribute-name>
+      <attribute-value>none</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>style</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>readWriteProperty</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>selectionMethod</attribute-name>
+      <attribute-value>useChoiceBox</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>size</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>password</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>linkSupport</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+    </placeholder><![CDATA[</td>]]></template:then>
+  </template:if><template:if>
+   <template:test><template:placeholder ref='Value Holder1' relative='false'/><![CDATA[ > 0]]></template:test>
+   <template:then><![CDATA[<td><b>]]><template:static_placeholder type='localizedstring'>
+     <template:arg name='resource-bundle'>com.blazesoft.smartforms.providers.strings</template:arg>
+     <template:arg name='string-name'>DocumentType</template:arg>
+    </template:static_placeholder><![CDATA[ : </b>]]><placeholder ref='DocumentTypeVH.DocumentTypeStringVH' relative='false'>
+     <attribute>
+      <attribute-name>none</attribute-name>
+      <attribute-value>none</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>rangeRole</attribute-name>
+      <attribute-value>none</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>style</attribute-name>
+      <attribute-value>standardTextEdit</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>readWriteProperty</attribute-name>
+      <attribute-value>readOnly</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>selectionMethod</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>size</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>password</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>paginate</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>rowsPerPage</attribute-name>
+      <attribute-value>5</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>toolbarLocation</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>linkSupport</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>toolbarMode</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>uiLayout</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+    </placeholder><![CDATA[</td>]]></template:then>
+  </template:if><![CDATA[</tr></table>]]><template:br/><![CDATA[<b>]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.smartforms.providers.strings</template:arg>
+   <template:arg name='string-name'>Variables</template:arg>
+  </template:static_placeholder><![CDATA[:</b>]]><template:br/><table name='Variables' ref='RulesetVariableVH' relative='false'><attribute>
+    <attribute-name>showFilterBand</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute><attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>true</attribute-value>
+   </attribute><attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute><attribute>
+    <attribute-name>paginate</attribute-name>
+    <attribute-value>no</attribute-value>
+   </attribute><attribute>
+    <attribute-name>rowsPerPage</attribute-name>
+    <attribute-value>5</attribute-value>
+   </attribute><attribute>
+    <attribute-name>showIndexCol</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute><attribute>
+    <attribute-name>toolbarLocation</attribute-name>
+    <attribute-value>bottom</attribute-value>
+   </attribute><attribute>
+    <attribute-name>showColHeaders</attribute-name>
+    <attribute-value>true</attribute-value>
+   </attribute><attribute>
+    <attribute-name>toolbarMode</attribute-name>
+    <attribute-value>mini</attribute-value>
+   </attribute><table-column header=''><placeholder ref='RulesetVariableVH.NameVH' relative='false'>
+     <attribute>
+      <attribute-name>none</attribute-name>
+      <attribute-value>none</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>rangeRole</attribute-name>
+      <attribute-value>none</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>style</attribute-name>
+      <attribute-value>standardTextEdit</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>readWriteProperty</attribute-name>
+      <attribute-value>readNWrite</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>selectionMethod</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>size</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>password</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>paginate</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>rowsPerPage</attribute-name>
+      <attribute-value>5</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>toolbarLocation</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>linkSupport</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>toolbarMode</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>uiLayout</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+    </placeholder></table-column><table-column header=''><placeholder ref='RulesetVariableVH.DataTypeVH' relative='false'>
+     <attribute>
+      <attribute-name>none</attribute-name>
+      <attribute-value>none</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>rangeRole</attribute-name>
+      <attribute-value>none</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>style</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>readWriteProperty</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>selectionMethod</attribute-name>
+      <attribute-value>useChoiceBox</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>size</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>password</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>paginate</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>rowsPerPage</attribute-name>
+      <attribute-value>5</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>toolbarLocation</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>linkSupport</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>toolbarMode</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>uiLayout</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+    </placeholder></table-column><table-column header=''><placeholder ref='RulesetVariableVH.DefaultValueVH' relative='false'>
+     <attribute>
+      <attribute-name>none</attribute-name>
+      <attribute-value>none</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>rangeRole</attribute-name>
+      <attribute-value>none</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>style</attribute-name>
+      <attribute-value>standardTextEdit</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>readWriteProperty</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>selectionMethod</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>size</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>password</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>paginate</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>rowsPerPage</attribute-name>
+      <attribute-value>5</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>toolbarLocation</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>linkSupport</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>toolbarMode</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>uiLayout</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+    </placeholder></table-column></table><template:br/><template:if>
+   <template:test> "<template:placeholder ref='DocumentTypeVH.AdvisorClassNameVH' relative='false'/>" is not equal to "" </template:test>
+   <template:then><template:br/><![CDATA[<b>]]><template:static_placeholder type='localizedstring'>
+     <template:arg name='resource-bundle'>com.blazesoft.smartforms.providers.strings</template:arg>
+     <template:arg name='string-name'>Rules</template:arg>
+    </template:static_placeholder><![CDATA[ :</b>]]><template:br/><table ref='RulesArrayVH' relative='false' name='Rules'><attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value>true</attribute-value>
+     </attribute><attribute>
+      <attribute-name>paginate</attribute-name>
+      <attribute-value>no</attribute-value>
+     </attribute><attribute>
+      <attribute-name>showIndexCol</attribute-name>
+      <attribute-value>false</attribute-value>
+     </attribute><attribute>
+      <attribute-name>showFilterBand</attribute-name>
+      <attribute-value>false</attribute-value>
+     </attribute><attribute>
+      <attribute-name>showColHeaders</attribute-name>
+      <attribute-value>true</attribute-value>
+     </attribute><attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute><table-column header=''><placeholder ref='RulesArrayVH.NameVH' relative='false'>
+       <attribute>
+        <attribute-name>none</attribute-name>
+        <attribute-value>none</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>rangeRole</attribute-name>
+        <attribute-value>none</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>style</attribute-name>
+        <attribute-value>standardTextEdit</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>readWriteProperty</attribute-name>
+        <attribute-value>readNWrite</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>selectionMethod</attribute-name>
+        <attribute-value></attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>size</attribute-name>
+        <attribute-value></attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>samePage</attribute-name>
+        <attribute-value></attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>password</attribute-name>
+        <attribute-value>false</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>ref-type</attribute-name>
+        <attribute-value>0</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>linkSupport</attribute-name>
+        <attribute-value></attribute-value>
+       </attribute>
+      </placeholder></table-column><table-column header='' width='40'><placeholder ref='RulesArrayVH.CommentsVH' relative='false'>
+       <attribute>
+        <attribute-name>none</attribute-name>
+        <attribute-value>none</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>rangeRole</attribute-name>
+        <attribute-value>none</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>style</attribute-name>
+        <attribute-value>standardTextEdit</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>readWriteProperty</attribute-name>
+        <attribute-value>readNWrite</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>selectionMethod</attribute-name>
+        <attribute-value></attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>size</attribute-name>
+        <attribute-value></attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>samePage</attribute-name>
+        <attribute-value></attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>password</attribute-name>
+        <attribute-value>false</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>ref-type</attribute-name>
+        <attribute-value>0</attribute-value>
+       </attribute>
+       <attribute>
+        <attribute-name>linkSupport</attribute-name>
+        <attribute-value></attribute-value>
+       </attribute>
+      </placeholder></table-column></table><template:br/></template:then>
+  </template:if><template:br/><template:br/><![CDATA[<b>]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.smartforms.providers.strings</template:arg>
+   <template:arg name='string-name'>Comments</template:arg>
+  </template:static_placeholder><![CDATA[</b>:]]><template:br/><placeholder ref='CommentsVH' relative='false'>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value>DhtmlTextAreaEdit</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>readWriteProperty</attribute-name>
+    <attribute-value>readNWrite</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>paginate</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>rowsPerPage</attribute-name>
+    <attribute-value>5</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>toolbarLocation</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>linkSupport</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>uiLayout</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+  </placeholder></template:content>
+ <template:content xmlns:template='http://www.blazesoft.com/template' xmlns='' section='entity-name'><template:placeholder ref='NameVH' relative='false'/></template:content>
+ <template name='template1'>
+  <ide-name>RuleCountProvider</ide-name>
+  <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1IBbJ02ODol1ycsh7pzUBwhf6T6' name='Provider' id='Provider'>
+  </instantiation>
+  <value>
+   <provider>com.blazesoft.smartforms.providers.NdRuleCountProvider</provider>
+  </value>
+ </template>
+ <template name='template2'>
+  <ide-name>RulesetNameProvider</ide-name>
+  <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1IBbJ02ODol1ycsh7pzUBwhf6T6' name='Provider' id='Provider'>
+  </instantiation>
+  <value>
+   <provider>com.blazesoft.smartforms.providers.NdRulesetNameProvider</provider>
+  </value>
+ </template>
+</template>

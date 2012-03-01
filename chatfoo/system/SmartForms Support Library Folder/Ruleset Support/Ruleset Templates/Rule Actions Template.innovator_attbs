@@ -1,0 +1,12 @@
+#Extended attributes for Innovator file-based repository (directory: 'Rule Actions Template')
+#Thu Mar 01 14:18:35 CST 2012
+contentType=Template
+guid=PJyHnDXJO0vefmn3IxG312f3aAp
+innovatorDisplayName=Rule Actions Template
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=Repository
+type=SmartForms Ruleset

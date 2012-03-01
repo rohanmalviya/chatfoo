@@ -1,0 +1,12 @@
+#Extended attributes for Innovator file-based repository (directory: 'Value Group Template')
+#Thu Mar 01 14:18:35 CST 2012
+contentType=Template
+guid=BwSKBA1Rg9FqnpLj74uLwjZTQZE
+innovatorDisplayName=Value Group Template
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=Repository
+type=SmartForms Ruleset

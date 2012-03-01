@@ -1,0 +1,12 @@
+#Extended attributes for Innovator file-based repository (directory: 'Function Template')
+#Thu Mar 01 14:18:35 CST 2012
+contentType=Template
+guid=H85lxkS0323IPIS5DygymoSLaQq
+innovatorDisplayName=Function Template
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=Repository
+type=SmartForms Ruleset

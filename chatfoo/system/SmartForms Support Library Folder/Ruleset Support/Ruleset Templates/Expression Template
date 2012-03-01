@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='Expression Template'>
+ <ide-name>Expression Template</ide-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='locationVH'>
+    <value></value>
+   </instance>
+   <instance ref='repositoryNameVH'>
+    <value></value>
+   </instance>
+   <instance ref='repositoryXmlVH'>
+    <value></value>
+   </instance>
+   <instance ref='versionVH'>
+    <value></value>
+   </instance>
+   <instance ref='filterVH'>
+    <value></value>
+   </instance>
+   <instance ref='releaseDateVH'>
+    <value></value>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter-list name='PostionVH' type='integer' ideName='PostionVH' min='0' max='1'>
+  </parameter-list>
+  <parameter-list name='ConnectingOperatorVH' type='andor' ideName='ConnectingOperatorVH' min='0' max='1'>
+  </parameter-list>
+  <parameter-list name='OpeningBracketsVH' type='string' ideName='OpeningBracketsVH' min='0'>
+  </parameter-list>
+  <parameter-list name='ClosingBracketsVH' type='string' ideName='ClosingBracketsVH' min='0'>
+  </parameter-list>
+  <parameter-list name='OperatorVH' type='NnoA5YGF59qjgyOj3jWpuv4XKLN' ideName='OperatorVH' min='0' max='1'>
+  </parameter-list>
+  <parameter-list name='OperandVH' type='Sx4VB7GiSELqSRwosGmPnrJGqxW' ideName='OperandVH' min='0'>
+  </parameter-list>
+ </parameters>
+ <family>SmartForms Ruleset Template</family>
+ <content section='display'><placeholder xmlns='http://www.blazesoft.com/display' ref='ConnectingOperatorVH' relative='false'>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>true</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder> <placeholder xmlns='http://www.blazesoft.com/display' ref='OpeningBracketsVH' relative='false'>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value>DhtmlTextEdit</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value>2</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>true</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder> <placeholder xmlns='http://www.blazesoft.com/display' ref='OperandVH' relative='false'>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value>DhtmlTextEdit</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder> <placeholder xmlns='http://www.blazesoft.com/display' ref='OperatorVH' relative='false'>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder> <placeholder xmlns='http://www.blazesoft.com/display' ref='OperandVH' relative='false'>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value>DhtmlTextEdit</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder> <placeholder xmlns='http://www.blazesoft.com/display' ref='ClosingBracketsVH' relative='false'>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value>DhtmlTextEdit</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value>2</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>true</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder></content>
+</template>

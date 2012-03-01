@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'I18N Template')
+#Thu Mar 01 14:18:35 CST 2012
+contentType=Template
+guid=6MM8NPxjOwTPIsiErGPUcScb5o3
+innovatorDisplayName=I18N Template
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=SmartForms Ruleset
