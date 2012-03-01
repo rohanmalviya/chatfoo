@@ -1,0 +1,19 @@
+#Extended attributes for Innovator file-based repository (directory: 'Patterns')
+#Thu Mar 01 14:18:51 CST 2012
+contentType=Template
+guid=MpVcct2JSIgqnKM8YWE8Mhw0p5X
+innovatorDisplayName=Patterns
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+innovatorLastModifiedUser=Template Developer
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=XML
