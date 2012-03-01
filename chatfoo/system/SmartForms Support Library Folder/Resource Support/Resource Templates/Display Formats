@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='Display Formats'>
+ <ide-name>Display Formats</ide-name>
+ <display-name>Display Formats</display-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter name='TargetLocation' type='TANfFYLPm6vMqry683fHcmnJGUi' ideName='TargetLocation'>
+  </parameter>
+ </parameters>
+ <family>XML Template</family>
+ <content section='xml'>
+<displayFormats xmlns=''>
+   <displayFormat type='xsd:date'>
+    <format>
+     <display>03-14-2001</display>
+     <pattern>MM-dd-yyyy</pattern>
+    </format>
+    <format>
+     <display>3/14/2001</display>
+     <pattern>M/dd/yyyy</pattern>
+    </format>
+    <format>
+     <display>Wednesday, March 14, 2001</display>
+     <pattern>EE, MMM dd, yyyy</pattern>
+    </format>
+    <format>
+     <display>3/14/01</display>
+     <pattern>M/dd/yy</pattern>
+    </format>
+    <format>
+     <display>03/14/01</display>
+     <pattern>MM/dd/yy</pattern>
+    </format>
+    <format>
+     <display>14-Mar-2001</display>
+     <pattern>dd-NNN-yyyy</pattern>
+    </format>
+    <format>
+     <display>March 14, 2001</display>
+     <pattern>MMM dd, yyyy</pattern>
+    </format>
+    <format>
+     <display>15-02-1984</display>
+     <pattern>dd-MM-yyyy</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:time'>
+    <format>
+     <display>13:30:55</display>
+     <pattern>HH:mm:ss</pattern>
+    </format>
+    <format>
+     <display>01:30:55 PM</display>
+     <pattern>hh:mm:ss a</pattern>
+    </format>
+    <format>
+     <display>13:30</display>
+     <pattern>HH:mm</pattern>
+    </format>
+    <format>
+     <display>01:30 PM</display>
+     <pattern>hh:mm a</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:dateTime'>
+    <format>
+     <display>03-14-2001 13:30:55</display>
+     <pattern>MM-dd-yyyy HH:mm:ss</pattern>
+    </format>
+    <format>
+     <display>3/14/01 1:30 PM</display>
+     <pattern>M/dd/yy hh:mm:ss a</pattern>
+    </format>
+    <format>
+     <display>3/14/01 13:30</display>
+     <pattern>M/dd/yy HH:mm:ss</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:gYearMonth'>
+    <format>
+     <display>March-2001</display>
+     <pattern>MMM-yyyy</pattern>
+    </format>
+    <format>
+     <display>3/2001</display>
+     <pattern>M/yyyy</pattern>
+    </format>
+    <format>
+     <display>3/01</display>
+     <pattern>M/yy</pattern>
+    </format>
+    <format>
+     <display>03/01</display>
+     <pattern>MM/yy</pattern>
+    </format>
+    <format>
+     <display>Mar-01</display>
+     <pattern>NNN-yy</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:gMonth'>
+    <format>
+     <display>March</display>
+     <pattern>MMM</pattern>
+    </format>
+    <format>
+     <display>3</display>
+     <pattern>M</pattern>
+    </format>
+    <format>
+     <display>03</display>
+     <pattern>MM</pattern>
+    </format>
+    <format>
+     <display>Mar</display>
+     <pattern>NNN</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:gMonthDay'>
+    <format>
+     <display>March 14</display>
+     <pattern>MMM dd</pattern>
+    </format>
+    <format>
+     <display>3/14</display>
+     <pattern>M/dd</pattern>
+    </format>
+    <format>
+     <display>Wednesday, March 14</display>
+     <pattern>EE, MMM dd</pattern>
+    </format>
+    <format>
+     <display>03/14</display>
+     <pattern>MM/dd</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:gYear'>
+    <format>
+     <display>2001</display>
+     <pattern>yyyy</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:integer'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+    <format>
+     <display>$ 1,234</display>
+     <pattern>$ #,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:long'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:double'>
+    <format>
+     <display>1234.00</display>
+     <pattern>0.00</pattern>
+    </format>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+    <format>
+     <display>1,234.00</display>
+     <pattern>#,##0.00</pattern>
+    </format>
+    <format>
+     <display>$1,234.000</display>
+     <pattern>$#,##0.00</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:float'>
+    <format>
+     <display>1234.00</display>
+     <pattern>0.00</pattern>
+    </format>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+    <format>
+     <display>1,234.00</display>
+     <pattern>#,##0.00</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:int'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:negativeInteger'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+    <format>
+     <display>$1,234</display>
+     <pattern>$#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:nonNegativeInteger'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:nonPositiveInteger'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:positiveInteger'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:short'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:byte'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:unsignedByte'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:unsignedInt'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:unsignedShort'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:unsignedLong'>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+   </displayFormat>
+   <displayFormat type='xsd:decimal'>
+    <format>
+     <display>1234.00</display>
+     <pattern>0.00</pattern>
+    </format>
+    <format>
+     <display>1234</display>
+     <pattern>0</pattern>
+    </format>
+    <format>
+     <display>1,234</display>
+     <pattern>#,##0</pattern>
+    </format>
+    <format>
+     <display>1,234.00</display>
+     <pattern>#,##0.00</pattern>
+    </format>
+   </displayFormat>
+  </displayFormats></content>
+</template>

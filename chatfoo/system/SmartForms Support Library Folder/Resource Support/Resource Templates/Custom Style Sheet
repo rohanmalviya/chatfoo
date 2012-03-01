@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='Custom Style Sheet'>
+ <ide-name>Custom Style Sheet</ide-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter name='TargetLocation' type='4P1TF7FIp9C9MWr9bsEaqugUmSU' ideName='TargetLocation'>
+  </parameter>
+ </parameters>
+ <family>Code Template</family>
+ <content section='srl'>/* ------------------------------------------------------------------------------------------------*/<br xmlns='http://www.blazesoft.com/template'/>/* Copyright (1997-2011),Fair Isaac Corporation. All Rights Reserved.<tab xmlns='http://www.blazesoft.com/template'/>*/<br xmlns='http://www.blazesoft.com/template'/>/* ------------------------------------------------------------------------------------------------*/<br xmlns='http://www.blazesoft.com/template'/><br xmlns='http://www.blazesoft.com/template'/>/* This file provides a template that will carry custom style sheet information */<br xmlns='http://www.blazesoft.com/template'/><br xmlns='http://www.blazesoft.com/template'/>/* ****** Start ****** */<br xmlns='http://www.blazesoft.com/template'/><br xmlns='http://www.blazesoft.com/template'/>/* For example  */<br xmlns='http://www.blazesoft.com/template'/>/* input {font:12px;font-family:arial} */<br xmlns='http://www.blazesoft.com/template'/><br xmlns='http://www.blazesoft.com/template'/>/* ****** End ****** */</content>
+</template>

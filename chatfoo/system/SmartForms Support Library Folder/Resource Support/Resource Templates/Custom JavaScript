@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='Custom JavaScript'>
+ <ide-name>Custom JavaScript</ide-name>
+ <display-name>Custom JavaScript</display-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter name='TargetLocation' type='P6BzGVGjcRIztUW0JEc96onmgLN' ideName='TargetLocation'>
+  </parameter>
+ </parameters>
+ <family>Code Template</family>
+ <content section='srl'>//<br xmlns='http://www.blazesoft.com/template'/>// Copyright (1997-2011),Fair Isaac Corporation. All Rights Reserved.<br xmlns='http://www.blazesoft.com/template'/>//<br xmlns='http://www.blazesoft.com/template'/><br xmlns='http://www.blazesoft.com/template'/>//This file provides a template script file that carries custom javascript functions<br xmlns='http://www.blazesoft.com/template'/>// The script functions should use the Smartforms processor API to interact with Smartforms processor<br xmlns='http://www.blazesoft.com/template'/>// The documentation of the Smartforms processor API is available at  folder Advisor65/doc/api/processor/index.html<br xmlns='http://www.blazesoft.com/template'/>// in your installation directory<br xmlns='http://www.blazesoft.com/template'/><br xmlns='http://www.blazesoft.com/template'/>/*<br xmlns='http://www.blazesoft.com/template'/>// ---------------------------------------------------------SAMPLE FUNCTIONS-------------------------------------------------------<br xmlns='http://www.blazesoft.com/template'/>// Here are few test functions you can use<br xmlns='http://www.blazesoft.com/template'/>// Function without any custom script parameter. The formInstance object and the component id are passed by default<br xmlns='http://www.blazesoft.com/template'/>function testFunction(formInstance, originatingCompId)<br xmlns='http://www.blazesoft.com/template'/>{<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>var pageModel = formInstance.getCurrentPageModel();<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>var sfComp = pageModel.getComponentModelItemById(originatingCompId);<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>var myValue = sfComp.getInstanceNode().getValue();<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>alert('The value of component with ID ' + originatingCompId + ' is '+ myValue);<br xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><br xmlns='http://www.blazesoft.com/template'/>// Function with two custom script parameters. The parameters are evaluated and the values are passed to the cutom script function.<br xmlns='http://www.blazesoft.com/template'/>// Two other arguments, formInstance object and the component id,  are passed by default<br xmlns='http://www.blazesoft.com/template'/>function testFunctionWithArgs(arg1, arg2, formInstance, originatingCompId)<br xmlns='http://www.blazesoft.com/template'/>{<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>var pageModel = formInstance.getCurrentPageModel();<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>var sfComp = pageModel.getComponentModelItemById(originatingCompId);<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>var myValue = sfComp.getInstanceNode().getValue();<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>alert('parameters passed to the function are ' + arg1 + ' and ' + arg2);<br xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><br xmlns='http://www.blazesoft.com/template'/>// Function for helper widget. The GUID of the component is passed by default. The GUID is the id in the HTML<br xmlns='http://www.blazesoft.com/template'/>// which consists of formInstance id and the Smartforms ID of the component<br xmlns='http://www.blazesoft.com/template'/>function testHelperWidget(compGUId)<br xmlns='http://www.blazesoft.com/template'/>{<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>// The associated component id and formInstance object can be get using the compGUID<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>var formId = getFormIdFromGUID(compGUId);<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>var compId = getIdFromGUID(compGUId);<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>var formInstance = pageProcessor.getForm(formId);<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>// In most cases you just need to set the value of associated component.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>// This can be done simply by invoking the jhelper widget UI and setting the value<br xmlns='http://www.blazesoft.com/template'/> <tab xmlns='http://www.blazesoft.com/template'/>var currentValue = getSFComponentValue(compGUId);<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>var newValue = window.prompt("Please specify the value", currentValue);<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (newValue != null) {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>setSFComponentValue(compGUId, newValue);<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>// ---------------------------------------------------------END:  SAMPLE FUNCTIONS-----------------------------------------------------<br xmlns='http://www.blazesoft.com/template'/>*/</content>
+</template>
