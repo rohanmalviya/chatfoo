@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'Single Standard Filter')
+#Thu Mar 01 14:22:28 CST 2012
+contentType=Template
+guid=5mg3wxD9QE10wcdjfYcPK9OF2Dz
+innovatorDisplayName=Single Standard Filter
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=XML
