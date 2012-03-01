@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'SmartFormsCommonFilterProvider')
+#Thu Mar 01 14:23:00 CST 2012
+contentType=Provider
+guid=7j4el2nYyuIAZ0C5xWPS1bI7TZQ
+innovatorDisplayName=SmartFormsCommonFilterProvider
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=Template List
