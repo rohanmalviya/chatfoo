@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'FormTemplateProvider')
+#Thu Mar 01 14:22:54 CST 2012
+contentType=Provider
+guid=Cw73ecGu0AGSrPaO2jK1N2xqFsq
+innovatorDisplayName=FormTemplateProvider
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=Template List

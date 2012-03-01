@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'PageTemplateProvider')
+#Thu Mar 01 14:22:54 CST 2012
+contentType=Provider
+guid=MbSoscAKI6GOKPYQm8VQ03y38vY
+innovatorDisplayName=PageTemplateProvider
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=Template List
