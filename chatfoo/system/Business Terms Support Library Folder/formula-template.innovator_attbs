@@ -1,0 +1,17 @@
+#Extended attributes for Innovator file-based repository (directory: 'formula-template')
+#Thu Mar 01 14:19:52 CST 2012
+contentType=Template
+guid=LiD1abl3WWME2lB8RZki72qRUGE
+innovatorDisplayName=formula-template
+innovatorItemCreationId=admin
+innovatorLastModifiedUser=admin
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=SRL
+type=SRL Code
