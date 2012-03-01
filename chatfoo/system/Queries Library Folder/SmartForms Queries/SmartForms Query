@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='SmartForms Query'  name-localized='true' resource-bundle='com.blazesoft.template.repository.query.srl.strings'>
+ <ide-name>SmartForms Query</ide-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1rMkkzMzzfvdEI6IH0JzqwLqDGV' name='Query' id='QJfLpjvnRF50efDOSab20Mg3NbZ'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter name='__ENTITY_PROPERTIES__VH__' type='1rMkkzMzzfvdEI6IH0JzqwLqDGV' ideName='Management Properties'>
+  </parameter>
+  <parameter name='EntityType' type='QeECCiMUyKLctfYMXa40wjtBUoc' ideName='EntityType'>
+  </parameter>
+  <parameter-selection name='FormFilterHolder' type='Cw73ecGu0AGSrPaO2jK1N2xqFsq' ideName='FormFilterHolder' min='1' max='1'>
+  </parameter-selection>
+  <parameter-selection name='PageFilterHolder' type='MbSoscAKI6GOKPYQm8VQ03y38vY' ideName='PageFilterHolder' min='1' max='1'>
+  </parameter-selection>
+  <parameter-selection name='RulesetFilterHolder' type='9kURa594t8VJyIiiXH7F7VXyLmW' ideName='RulesetFilterHolder' min='1' max='1'>
+  </parameter-selection>
+  <parameter-selection name='RuleFilterHolder' type='AhtnsGP2dO2L3E1FEMKOsXyI7ot' ideName='RuleFilterHolder' min='1' max='1'>
+  </parameter-selection>
+  <parameter-selection name='EventRuleFilterHolder' type='Oavkc8K5AtJCrsd3izTjEZGSrOG' ideName='EventRuleFilterHolder' min='1' max='1'>
+  </parameter-selection>
+ </parameters>
+ <family>Query Template</family>
+ <template:content xmlns:template='http://www.blazesoft.com/template' xmlns='http://www.blazesoft.com/srl' section='srl'><function managementPropertiesRef='QJfLpjvnRF50efDOSab20Mg3NbZ'>
+   <name>executeQuery</name>
+   <type>QueryResultSet</type>
+   <parameters>
+    <parameter>
+     <type>QueryContext</type>
+     <name>ctx</name>
+    </parameter>
+   </parameters>
+   <body>actualEntries is an array of Object.<template:br/>filteredEntries is an array of Object.<template:br/><template:br/><template:if>
+     <template:test>"<template:placeholder ref='EntityType' relative='false'/>" is equal to "SmartForms Form"</template:test>
+     <template:then><template:placeholder ref='FormFilterHolder' relative='false'/></template:then>
+    </template:if><template:br/><template:if>
+     <template:test>"<template:placeholder ref='EntityType' relative='false'/>" is equal to "SmartForms Page"</template:test>
+     <template:then><template:placeholder ref='PageFilterHolder' relative='false'/></template:then>
+    </template:if><template:br/><template:if>
+     <template:test>"<template:placeholder ref='EntityType' relative='false'/>" is equal to "SmartForms Ruleset"</template:test>
+     <template:then><template:placeholder ref='RulesetFilterHolder' relative='false'/></template:then>
+    </template:if><template:br/><template:if>
+     <template:test>"<template:placeholder ref='EntityType' relative='false'/>" is equal to "SmartForms Rule"</template:test>
+     <template:then><template:placeholder ref='RuleFilterHolder' relative='false'/></template:then>
+    </template:if><template:br/><template:if>
+     <template:test>"<template:placeholder ref='EntityType' relative='false'/>" is equal to "SmartForms Event Rule"</template:test>
+     <template:then><template:placeholder ref='EventRuleFilterHolder' relative='false'/></template:then>
+    </template:if><template:br/><template:br/>for each Object in filteredEntries do {<template:br/><template:tab/>ctx.resultSet.addResultObj(it).<template:br/>}<template:br/><template:br/>return ctx.resultSet.</body>
+  </function></template:content>
+ <template:content xmlns:template='http://www.blazesoft.com/template' xmlns='http://www.blazesoft.com/display' section='display'><![CDATA[<b><nobr> ]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</template:arg>
+   <template:arg name='string-name'>SearchForAnySmartFormsItem</template:arg>
+  </template:static_placeholder><![CDATA[ </nobr></b>]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</template:arg>
+   <template:arg name='string-name'>ofType</template:arg>
+  </template:static_placeholder>: <placeholder relative='false' ref='EntityType'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder><template:br/><template:if>
+   <template:test>"<template:placeholder ref='EntityType' relative='false'/>" is equal to "SmartForms Form"</template:test>
+   <template:then><placeholder relative='false' ref='FormFilterHolder'>
+     <attribute>
+      <attribute-name>rangeRole</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value>false</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>style</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>none</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>selectionMethod</attribute-name>
+      <attribute-value>useMiniDhtmlChoiceBox</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>size</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>password</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute>
+    </placeholder></template:then>
+  </template:if><template:if>
+   <template:test>"<template:placeholder ref='EntityType' relative='false'/>" is equal to "SmartForms Page"</template:test>
+   <template:then><placeholder relative='false' ref='PageFilterHolder'>
+     <attribute>
+      <attribute-name>rangeRole</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value>false</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>style</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>none</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>selectionMethod</attribute-name>
+      <attribute-value>useMiniDhtmlChoiceBox</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>size</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>password</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute>
+    </placeholder></template:then>
+  </template:if><template:if>
+   <template:test>"<template:placeholder ref='EntityType' relative='false'/>" is equal to "SmartForms Ruleset"</template:test>
+   <template:then><placeholder relative='false' ref='RulesetFilterHolder'>
+     <attribute>
+      <attribute-name>rangeRole</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value>false</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>style</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>none</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>selectionMethod</attribute-name>
+      <attribute-value>useMiniDhtmlChoiceBox</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>size</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>password</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute>
+    </placeholder></template:then>
+  </template:if><template:if>
+   <template:test>"<template:placeholder ref='EntityType' relative='false'/>" is equal to "SmartForms Rule"</template:test>
+   <template:then><placeholder relative='false' ref='RuleFilterHolder'>
+     <attribute>
+      <attribute-name>rangeRole</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value>false</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>style</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>none</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>selectionMethod</attribute-name>
+      <attribute-value>useMiniDhtmlChoiceBox</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>size</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>password</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute>
+    </placeholder></template:then>
+  </template:if><template:if>
+   <template:test>"<template:placeholder ref='EntityType' relative='false'/>" is equal to "SmartForms Event Rule"</template:test>
+   <template:then><placeholder relative='false' ref='EventRuleFilterHolder'>
+     <attribute>
+      <attribute-name>rangeRole</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>samePage</attribute-name>
+      <attribute-value>false</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>style</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>none</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>selectionMethod</attribute-name>
+      <attribute-value>useMiniDhtmlChoiceBox</attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>size</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>password</attribute-name>
+      <attribute-value></attribute-value>
+     </attribute>
+     <attribute>
+      <attribute-name>ref-type</attribute-name>
+      <attribute-value>0</attribute-value>
+     </attribute>
+    </placeholder></template:then>
+  </template:if></template:content>
+</template>
