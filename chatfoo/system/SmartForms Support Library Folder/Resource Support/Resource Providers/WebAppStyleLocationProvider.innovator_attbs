@@ -1,0 +1,13 @@
+#Extended attributes for Innovator file-based repository (directory: 'WebAppStyleLocationProvider')
+#Thu Mar 01 14:18:47 CST 2012
+contentType=Provider
+guid=4P1TF7FIp9C9MWr9bsEaqugUmSU
+innovatorDisplayName=WebAppStyleLocationProvider
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+innovatorLastModifiedUser=Template Developer
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=SRL
+type=String
