@@ -1,0 +1,12 @@
+#Extended attributes for Innovator file-based repository (directory: 'Operand Templates Provider')
+#Thu Mar 01 14:18:27 CST 2012
+contentType=Provider
+guid=L8BTxk9K4A3zF58qOxLBaldbnZ1
+innovatorDisplayName=Operand Templates Provider
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=Repository
+type=Template List

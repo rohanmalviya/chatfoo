@@ -1,0 +1,12 @@
+#Extended attributes for Innovator file-based repository (directory: 'Generic Provider1')
+#Thu Mar 01 14:18:27 CST 2012
+contentType=Provider
+guid=U9hXbwROLTPLg3rCvjUgqpypwx4
+innovatorDisplayName=Generic Provider1
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=Repository
+type=Generic

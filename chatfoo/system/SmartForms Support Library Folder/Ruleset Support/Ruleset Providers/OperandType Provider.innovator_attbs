@@ -1,0 +1,12 @@
+#Extended attributes for Innovator file-based repository (directory: 'OperandType Provider')
+#Thu Mar 01 14:18:27 CST 2012
+contentType=Provider
+guid=AjsrzipytLYqh212zUC4qBUQfOb
+innovatorDisplayName=OperandType Provider
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=Repository
+type=Value List
