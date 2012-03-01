@@ -1,0 +1,11 @@
+#Extended attributes for Innovator file-based repository (directory: 'Repository Subtype')
+#Thu Mar 01 14:19:42 CST 2012
+contentType=Template
+guid=1dIhVhmLphsz9XtMbWGV2yA13ea
+innovatorDisplayName=Repository Subtype
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+subType=Management Property
+target=Repository
+type=Management Properties Definition
