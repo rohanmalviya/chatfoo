@@ -1,0 +1,20 @@
+#Extended attributes for Innovator file-based repository (directory: 'SmartForms Support Library')
+#Thu Mar 01 14:23:20 CST 2012
+contentType=Fixed
+guid=TdzkUTFmIiq43H6llYRwHFcgAUS
+innovatorDisplayName=SmartForms Support Library
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+innovatorLastModifiedUser=Template Developer
+innovatorTemplateRef=ProjectEntityTemplate
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=Project
