@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='SmartFormsFormFilter'>
+ <ide-name>SmartFormsFormFilter</ide-name>
+ <display-name>SmartForms Form</display-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter-list name='VH1' type='QlTY2x4iCDUarj9feejSjRzmiuZ' ideName='AdditionalFilter' min='0'>
+   <arg name='_Entity Type'>SmartForms Form</arg>
+  </parameter-list>
+  <parameter-selection name='CommonFilter' type='7j4el2nYyuIAZ0C5xWPS1bI7TZQ' ideName='CommonFilter' min='1' max='1'>
+  </parameter-selection>
+  <parameter-selection name='Value Holder1' type='NT0AU807JdnigtIuWY17VpDCs1M' ideName='CommonFilter2' min='1' max='1'>
+  </parameter-selection>
+ </parameters>
+ <family>Code Template</family>
+ <template:content xmlns:template='http://www.blazesoft.com/template' xmlns='http://www.blazesoft.com/srl' section='srl'>entryType is a string initially "SmartForms Form".<template:br/><template:br/>entryTypeCode is an integer initially RomSchemaConstantsUtil.getTypeForCategory(entryType).<template:br/>if (entryTypeCode is equal to -1) then entryTypeCode = RomSchemaConstants.TYPE_UNKNOWN.<template:br/>entrySubTypeCode is an integer initially RomSchemaConstantsUtil.getSubTypeForCategory(entryType).<template:br/>if (entrySubTypeCode is equal to -1) then {<template:br/><template:tab/>entrySubTypeCode = RomSchemaConstants.SUB_TYPE_NONE.<template:br/>} <template:br/><template:br/>initialEntries is some fixed array of Object initially unknown.<template:br/>initialEntries is ctx.getEntities(entryTypeCode, entrySubTypeCode).<template:br/>// If there is nothing to look into, just return...<template:br/>if initialEntries is unknown then return ctx.resultSet.<template:br/><template:br/><template:placeholder ref='CommonFilter' relative='false'/><template:br/><template:br/><template:br/>for each Object in actualEntries do {<template:br/><template:tab/><template:placeholder ref='Value Holder1' relative='false'/><template:br/><template:tab/>doesMatchFilters is a boolean initially true.<template:br/><template:tab/>totalmatch is a boolean initially true.<template:br/><template:tab/><template:foreach ref='VH1' relative='false'>
+   <template:prefix></template:prefix>
+   <template:infix></template:infix>
+   <template:postfix></template:postfix>
+   <template:item><template:br/><template:tab/><template:tab/><template:placeholder ref='VH1' relative='false'/><template:br/><template:tab/><template:tab/>if (doesMatchFilters is false) then {<template:br/><template:tab/><template:tab/><template:tab/>totalmatch = false.<template:br/><template:tab/><template:tab/>}<template:br/><template:tab/></template:item>
+  </template:foreach><template:br/><template:tab/>if (totalmatch is true) then {<template:br/><template:tab/><template:tab/>filteredEntries.append(it).<template:br/><template:tab/>}<template:br/>}<template:br/></template:content>
+ <template:content xmlns:template='http://www.blazesoft.com/template' xmlns='http://www.blazesoft.com/display' section='display'><placeholder relative='false' ref='CommonFilter'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useMiniDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder><template:br/><template:br/><![CDATA[ <b><nobr>]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</template:arg>
+   <template:arg name='string-name'>AdditionalFilters</template:arg>
+  </template:static_placeholder><![CDATA[ </nobr></b>  <i><nobr>]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</template:arg>
+   <template:arg name='string-name'>allMustBeSatisfied</template:arg>
+  </template:static_placeholder><![CDATA[ </nobr></i>]]><placeholder ref='Value Holder1' relative='false'>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useMiniDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder><template:br/><placeholder relative='false' ref='VH1'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder></template:content>
+</template>

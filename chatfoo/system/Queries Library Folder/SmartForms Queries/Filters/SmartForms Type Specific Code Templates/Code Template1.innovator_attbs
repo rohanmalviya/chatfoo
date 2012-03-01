@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'Code Template1')
+#Thu Mar 01 14:22:45 CST 2012
+contentType=Template
+guid=VHsWMJNVl9kRYbeB0WFVoE8JnUp
+innovatorDisplayName=SmartFormsCommonFilter2
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=SRL
+type=SRL Code

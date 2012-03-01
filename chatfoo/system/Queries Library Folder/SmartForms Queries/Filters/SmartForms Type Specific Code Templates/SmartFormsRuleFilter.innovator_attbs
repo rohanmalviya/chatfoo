@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'SmartFormsRuleFilter')
+#Thu Mar 01 14:22:45 CST 2012
+contentType=Template
+guid=HH6mZR1wb8M8EMMa9cTvt1ZurXY
+innovatorDisplayName=SmartFormsRuleFilter
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=SRL
+type=SRL Code

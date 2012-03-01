@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='SmartFormsCommonFilter'>
+ <ide-name>SmartFormsCommonFilter</ide-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter name='Name' type='string' ideName='Name'>
+  </parameter>
+  <parameter name='NameOperator' type='DJvi93JZhQolaIs5glrrjaYucnp' ideName='NameOperator'>
+  </parameter>
+  <parameter-selection name='Location' type='F83E6lyacTIOexHSWkkBFM3lMwu' ideName='Location' min='1' max='1'>
+  </parameter-selection>
+  <parameter-selection name='Dates' type='68yfulJ0pEKQUlDdOr2KYdEWvfj' ideName='Dates' min='1' max='1'>
+  </parameter-selection>
+  <parameter-selection name='Author' type='Y9hCZELgrRFRrCq9PJn0zX0xtcj' ideName='Author' min='1' max='1'>
+  </parameter-selection>
+ </parameters>
+ <family>Code Template</family>
+ <template:content xmlns:template='http://www.blazesoft.com/template' xmlns='http://www.blazesoft.com/srl' section='srl'>enteredEntryName is a string initially "<template:placeholder ref='Name' relative='false'/>".<template:br/>for each Object in initialEntries do {<template:br/><template:tab/>entry is some RomEntry initially unknown.<template:br/><template:tab/>item is some Item initially unknown.<template:br/><template:br/><template:tab/>if (it is an SrlRulesetItem) then {<template:br/><template:tab/><template:tab/>rs is some SrlRuleset initially (it as an SrlRulesetItem).containingSrlRuleset.<template:br/><template:tab/><template:tab/>if (rs is an Item) then { <template:br/><template:tab/><template:tab/><template:tab/>item is (rs as an Item).<template:tab/><template:tab/><template:br/><template:tab/><template:tab/>}<template:br/><template:tab/><template:tab/>if (rs is a RomEntry) then {<template:br/><template:tab/><template:tab/><template:tab/>entry is (rs as a RomEntry).<template:tab/><template:br/><template:tab/><template:tab/>}<template:br/><template:tab/><template:tab/>if (rs is an GroupItem and (rs as an GroupItem).containingGroup is not null) then {<template:br/><template:tab/><template:tab/><template:tab/>group is some Group initially (rs as an  GroupItem).containingGroup.<template:br/><template:tab/><template:tab/><template:tab/>if (group is an Item) then { <template:br/><template:tab/><template:tab/><template:tab/><template:tab/>item is (group as an Item).<template:tab/><template:br/><template:tab/><template:tab/><template:tab/>}<template:br/><template:tab/><template:tab/><template:tab/>if (group is a RomEntry) then {<template:br/><template:tab/><template:tab/><template:tab/><template:tab/>entry is (group as a RomEntry).<template:tab/><template:br/><template:tab/><template:tab/><template:tab/>}<template:br/><template:tab/><template:tab/>}<template:br/><template:tab/>}<template:br/><template:tab/>if (it is an GroupItem and (it as an GroupItem).containingGroup is not null) then {<template:br/><template:tab/><template:tab/>group is some Group initially (it as an  GroupItem).containingGroup.<template:br/><template:tab/><template:tab/>if (group is an Item) then { <template:br/><template:tab/><template:tab/><template:tab/>item is (group as an Item).<template:tab/><template:br/><template:tab/><template:tab/>}<template:br/><template:tab/><template:tab/>if (group is a RomEntry) then {<template:br/><template:tab/><template:tab/><template:tab/>entry is (group as a RomEntry).<template:tab/><template:br/><template:tab/><template:tab/>}<template:br/><template:tab/>}<template:br/><template:tab/>if (it is a PromTemplate) then {<template:br/><template:tab/><template:tab/>entry is (it as a PromTemplate).item.<template:br/><template:tab/><template:tab/>item is (it as a PromTemplate).item.<template:br/><template:tab/>}<template:br/><template:tab/>if (it is a PromInstance) then {<template:br/><template:tab/><template:tab/>entry is (it as a PromInstance).item.<template:br/><template:tab/><template:tab/>item is (it as a PromInstance).item.<template:br/><template:tab/>}<template:br/><template:tab/>if (it is a PromProvider) then {<template:br/><template:tab/><template:tab/>entry is (it as a PromProvider).item.<template:br/><template:tab/><template:tab/>item is (it as a PromProvider).item.<template:br/><template:tab/>}<template:br/><template:tab/>if (it is a RomEntry) then {<template:br/><template:tab/><template:tab/>entry is (it as a RomEntry).<template:br/><template:tab/>}<template:tab/><template:br/><template:tab/>if (it is an Item) then {<template:br/><template:tab/><template:tab/>item is (it as an Item).<template:br/><template:tab/>}<template:br/><template:tab/>if (it is an ItemContent) then {<template:br/><template:tab/><template:tab/>item is (it as an ItemContent).item.<template:br/><template:tab/><template:tab/>entry is (it as an ItemContent).item.<template:br/><template:tab/><template:tab/>if (entryType is equal to "SmartForms Rule") then {<template:br/><template:tab/><template:tab/><template:tab/>sfRuleInstance is some InstantiationElement initially (it as an SmartFormsRule).instance.<template:br/><template:tab/><template:tab/><template:tab/>rulesetPromInstance is some PromInstance initially sfRuleInstance.parent.parent as a PromInstance.<template:br/><template:tab/><template:tab/><template:tab/>item is rulesetPromInstance.item.<template:br/><template:tab/><template:tab/><template:tab/>entry is item.<template:br/><template:tab/><template:tab/>}<template:br/><template:tab/>}<template:br/><template:br/><template:br/><template:tab/>entryName is a string initially "".<template:br/><template:br/><template:tab/>if (it is a Named) then {<template:br/><template:tab/><template:tab/>entryName is (it as a Named).name.<template:br/><template:tab/>}<template:br/><template:tab/>else if (it is a PromTemplate) then {<template:br/><template:tab/><template:tab/>entryName is (it as a PromTemplate).displayName.<template:br/><template:tab/><template:tab/>if (entryName is null or entryName.length() is 0) then {<template:br/><template:tab/><template:tab/><template:tab/>entryName is (it as a PromTemplate).ideName.<template:br/><template:tab/><template:tab/>}<template:br/><template:tab/>}<template:br/><template:tab/>else if (it is a PromInstance) then {<template:br/><template:tab/><template:tab/>entryName is (it as a PromInstance).name.<template:br/><template:tab/>}<template:br/><template:tab/>else if (it is a PromProvider) then {<template:br/><template:tab/><template:tab/>entryName is (it as a PromProvider).ideName.<template:br/><template:tab/>}<template:br/><template:tab/>else if (it is a RomEntry) then {<template:br/><template:tab/><template:tab/>entryName is (it as a RomEntry).displayName.<template:br/><template:tab/>}<template:br/><template:tab/><template:br/><template:tab/>if (enteredEntryName.length() is equal to 0 or entryName <template:placeholder ref='NameOperator' relative='true'/> enteredEntryName) then {<template:br/><template:br/><template:tab/><template:tab/>// Location (variable entryLocation used in location filter)<template:br/><template:tab/><template:tab/>entryLocation is a string initially unknown.<template:br/><template:tab/><template:tab/>if (entry is known and entry is not null and entry is an Entry) then {<template:br/><template:tab/><template:tab/><template:tab/>entryLocation is ProjectUtil.getDisplayPath(entry as an Entry).<template:br/><template:tab/><template:tab/>}<template:br/><template:tab/><template:tab/><template:br/><template:tab/><template:tab/>if (<template:placeholder ref='Location' relative='true'/>) then {<template:br/><template:br/><template:tab/><template:tab/><template:tab/>// Date (variable entryDate used in <template:placeholder ref='Dates' relative='true'/>)<template:br/><template:tab/><template:tab/><template:tab/>entryDate is a date initially unknown.<template:br/><template:tab/><template:tab/><template:tab/>if (item is known and item is not null) then entryDate is item.lastModified.<template:br/><template:tab/><template:tab/><template:tab/>if (<template:placeholder ref='Dates' relative='true'/>) then {<template:br/><template:br/><template:tab/><template:tab/><template:tab/><template:tab/>// User (variable entryUser used in <template:placeholder ref='Author' relative='true'/>)<template:br/><template:tab/><template:tab/><template:tab/><template:tab/>entryUser is a string initially unknown.<template:br/><template:tab/><template:tab/><template:tab/><template:tab/>if (entry is known and entry is not null) then {<template:br/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/>attributeId is a fixed array of 1 string initially {it [0] = Schema.LAST_MODIFIED_USER_ATTB_TAG}.<template:br/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/>userAttributes is some fixed array of RepositoryEntryAttribute initially (entry).getEntryAttributes(attributeId).<template:br/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/><![CDATA[if (userAttributes is known and userAttributes is not null and userAttributes.count > 0) then {]]><template:br/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/>if (userAttributes[0].attbValue is not  null) then {<template:br/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/>entryUser = userAttributes[0].attbValue.<template:br/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/>}<template:br/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/>}<template:br/><template:tab/><template:tab/><template:tab/><template:tab/>}<template:br/><template:tab/><template:tab/><template:tab/><template:tab/>if (<template:placeholder ref='Author' relative='true'/>) then {<template:br/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/>// Everything  fits<template:br/><template:tab/><template:tab/><template:tab/><template:tab/><template:tab/>actualEntries.append(it).<template:br/><template:tab/><template:tab/><template:tab/><template:tab/>}<template:br/><template:tab/><template:tab/><template:tab/>}<template:tab/><template:tab/><template:tab/><template:br/><template:tab/><template:tab/>}<template:br/><template:tab/>}<template:br/>}</template:content>
+ <template:content xmlns:template='http://www.blazesoft.com/template' xmlns='http://www.blazesoft.com/display' section='display'><![CDATA[<table><tr><td><nobr>]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</template:arg>
+   <template:arg name='string-name'>whoseName</template:arg>
+  </template:static_placeholder><![CDATA[</nobr> ]]><placeholder relative='false' ref='NameOperator'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder><![CDATA[</td><td>]]><placeholder relative='false' ref='Name'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value>standardTextEdit</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder><![CDATA[</td></tr><tr><td><nobr>]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</template:arg>
+   <template:arg name='string-name'>locatedIn</template:arg>
+  </template:static_placeholder><![CDATA[</nobr></td><td> ]]><placeholder relative='false' ref='Location'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder><![CDATA[</td></tr><tr><td><nobr>]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</template:arg>
+   <template:arg name='string-name'>lastModified</template:arg>
+  </template:static_placeholder><![CDATA[ </nobr></td><td>]]><placeholder relative='false' ref='Dates'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder><![CDATA[ </td></tr><tr><td valign="top"><nobr>]]><template:static_placeholder type='localizedstring'>
+   <template:arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</template:arg>
+   <template:arg name='string-name'>by</template:arg>
+  </template:static_placeholder><![CDATA[ </nobr></td><td>]]><placeholder relative='false' ref='Author'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder><![CDATA[</td></tr></table>]]><template:br/></template:content>
+</template>
