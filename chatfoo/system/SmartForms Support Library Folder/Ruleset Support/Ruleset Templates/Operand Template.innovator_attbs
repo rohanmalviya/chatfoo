@@ -1,0 +1,12 @@
+#Extended attributes for Innovator file-based repository (directory: 'Operand Template')
+#Thu Mar 01 14:18:35 CST 2012
+contentType=Template
+guid=Sx4VB7GiSELqSRwosGmPnrJGqxW
+innovatorDisplayName=Operand Template
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=Repository
+type=SmartForms Ruleset

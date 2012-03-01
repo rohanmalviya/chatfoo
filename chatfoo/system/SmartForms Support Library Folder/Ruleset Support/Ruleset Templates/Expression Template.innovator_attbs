@@ -1,0 +1,12 @@
+#Extended attributes for Innovator file-based repository (directory: 'Expression Template')
+#Thu Mar 01 14:18:35 CST 2012
+contentType=Template
+guid=OWrKHj35HfgFqH1PHs5738SLJ95
+innovatorDisplayName=Expression Template
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=Repository
+type=SmartForms Ruleset
