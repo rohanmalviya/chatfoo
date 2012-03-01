@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'Plural Type Operators Provider')
+#Thu Mar 01 14:20:16 CST 2012
+contentType=Provider
+guid=6l17bp8NZtS7e3pOHVEw5YdYUSd
+innovatorDisplayName=Plural Type Operators Provider
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=Generic
