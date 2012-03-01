@@ -1,0 +1,8 @@
+#Extended attributes for Innovator file-based repository (directory: 'Business Object Models')
+#Thu Mar 01 14:19:28 CST 2012
+guid=1ezxcz2DI7WCYlF3JtxWtAMfRg7
+innovatorDisplayName=BusinessObjectModelsFolder
+innovatorItemCreationId=halplunkett@gmail.com
+isNameLocalized=true
+isSystemDirectory=true
+resourceBundle=com.blazesoft.template.repository.properties.strings
