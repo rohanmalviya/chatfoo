@@ -1,0 +1,11 @@
+#Extended attributes for Innovator file-based repository (directory: 'JDBC BOM')
+#Thu Mar 01 14:19:28 CST 2012
+contentType=Template
+guid=15ns3lKx1Knx9Uv5XBwOBDQGq3M
+innovatorDisplayName=JDBC BOM
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+subType=Management Property Category
+target=Repository
+type=Management Properties Definition
