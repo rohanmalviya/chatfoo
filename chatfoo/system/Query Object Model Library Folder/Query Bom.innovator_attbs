@@ -1,0 +1,13 @@
+#Extended attributes for Innovator file-based repository (directory: 'Query Bom')
+#Thu Mar 01 14:19:56 CST 2012
+_@ROM_MANAGEMENT_PROPERTY_management\ properties\ definition\ templates/Entry\ Nature\ Properties.Properties.Backup\ Date\ VH=Jan 1, 1900
+_@ROM_MANAGEMENT_PROPERTY_management\ properties\ definition\ templates/Entry\ Nature\ Properties.Properties.Backup\ Status\ VH=Ready for Backup
+contentType=Fixed
+guid=PchI9dzGIbcVtpuY0zhRmL9ZOaa
+innovatorDisplayName=Query Bom
+innovatorItemCreationId=jim
+innovatorItemVersionId=1
+isSystemTemplate=true
+subType=None
+target=SRL
+type=Business Object Model
