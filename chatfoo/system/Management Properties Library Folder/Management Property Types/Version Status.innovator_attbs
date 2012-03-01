@@ -1,0 +1,11 @@
+#Extended attributes for Innovator file-based repository (directory: 'Version Status')
+#Thu Mar 01 14:18:57 CST 2012
+contentType=Provider
+guid=1qqx9aHCnKriPAo4PN2dUJQVTIT
+innovatorDisplayName=version status
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+subType=None
+target=Repository
+type=Generic
