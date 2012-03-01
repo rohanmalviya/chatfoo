@@ -1,0 +1,13 @@
+#Extended attributes for Innovator file-based repository (directory: 'RuleEditorTemplateLocationProvider')
+#Thu Mar 01 14:18:47 CST 2012
+contentType=Provider
+guid=TANfFYLPm6vMqry683fHcmnJGUi
+innovatorDisplayName=RuleEditorTemplateLocationProvider
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+innovatorLastModifiedUser=Template Developer
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=SRL
+type=String
