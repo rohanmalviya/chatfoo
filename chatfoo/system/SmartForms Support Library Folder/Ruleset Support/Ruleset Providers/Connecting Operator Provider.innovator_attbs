@@ -1,0 +1,12 @@
+#Extended attributes for Innovator file-based repository (directory: 'Connecting Operator Provider')
+#Thu Mar 01 14:18:27 CST 2012
+contentType=Provider
+guid=KBKV8LoQN1subqxR6B1QDw5IkPC
+innovatorDisplayName=Connecting Operator Provider
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+managementProperty.Source\ Reference=
+subType=None
+target=Repository
+type=Value List
