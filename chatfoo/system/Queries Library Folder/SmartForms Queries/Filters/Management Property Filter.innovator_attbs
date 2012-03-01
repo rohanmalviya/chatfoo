@@ -1,0 +1,17 @@
+#Extended attributes for Innovator file-based repository (directory: 'Management Property Filter')
+#Thu Mar 01 14:22:52 CST 2012
+contentType=Template
+guid=GcOeyWZpKc3jJG21yxatukmfXbK
+innovatorDisplayName=ManagementPropertyFilter
+innovatorItemCreationId=Template Developer
+innovatorItemVersionId=1
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=SRL
+type=SRL Code
