@@ -1,0 +1,7 @@
+#Extended attributes for Innovator file-based repository (directory: 'SmartForms Entities')
+#Thu Mar 01 14:19:23 CST 2012
+innovatorDisplayName=SmartFormsEntitiesFolder
+innovatorItemCreationId=halplunkett@gmail.com
+isNameLocalized=true
+isSystemDirectory=true
+resourceBundle=com.blazesoft.template.repository.properties.strings
