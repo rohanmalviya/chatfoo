@@ -1,0 +1,15 @@
+#Extended attributes for Innovator file-based repository (directory: 'System Library')
+#Thu Mar 01 14:23:20 CST 2012
+contentType=Fixed
+guid=1ie0zOvN2aM1BaPfZLVRqRQ2p5N
+innovatorDisplayName=System Library
+innovatorItemCreationId=Template Developer
+innovatorItemType=Innovator instance
+innovatorItemVersionId=1
+innovatorShortDesc=
+innovatorTemplateRef=ProjectEntityTemplate
+isSystemTemplate=true
+subType=None
+system.library.project.version=6.10.2
+target=Repository
+type=Project
