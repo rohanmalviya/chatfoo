@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'Comparison Query Target Filters')
+#Thu Mar 01 14:20:11 CST 2012
+contentType=Template
+guid=NTs76wzKWp3pl1jLAaQsyE679tJ
+innovatorDisplayName=Comparison Query Target Filters
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=XML
