@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'Logic Query')
+#Thu Mar 01 14:23:14 CST 2012
+contentType=Template
+guid=Jp0f7vDB2n7d0EkivXJYBdFAUwm
+innovatorDisplayName=Logic Query
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=Query
