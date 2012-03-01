@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'RulesetFilterProvider')
+#Thu Mar 01 14:22:54 CST 2012
+contentType=Provider
+guid=9kURa594t8VJyIiiXH7F7VXyLmW
+innovatorDisplayName=RulesetFilterProvider
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=Repository
+type=Template List
