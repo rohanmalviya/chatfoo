@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='ExecutionMode'>
+ <ide-name>ExecutionMode</ide-name>
+ <display-name>Execution Mode</display-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter name='ExeMode' type='66BajkBkxFOPGJo0F0XbebzqXas.template1' ideName='ExeMode'>
+  </parameter>
+  <parameter name='ExeModeOperator' type='DJvi93JZhQolaIs5glrrjaYucnp' ideName='ExeModeOperator'>
+  </parameter>
+ </parameters>
+ <family>Code Template</family>
+ <content section='srl'>if(it is a PromInstance) then { <br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>promIns is some PromInstance initially (it as a PromInstance).<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (promIns.type is RomSchemaConstants.TYPE_SF_RULESET) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (promIns.subType is equal to RomSchemaConstants.SUB_TYPE_NONE) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>exeResult is some Object.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>shownexeMode is a string initially "<placeholder xmlns='http://www.blazesoft.com/template' ref='ExeMode' relative='false'/>".<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>exeMode is a string initially "".<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (shownexeMode is known) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if(shownexeMode is "Normal") then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>exeMode = "RUN_ALL".<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>else {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>exeMode = "BREAK_ON_FIRST".<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>rulesetObj is some SmartFormsRuleset initially SmartFormsContentFactory.newRuleset(it as an PromInstance).<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>exeResult = rulesetObj.executionMode as an Object.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (exeResult is known) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>resultString is a string initially (exeResult as a string).<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (not(resultString <placeholder xmlns='http://www.blazesoft.com/template' ref='ExeModeOperator' relative='false'/> exeMode)) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>}</content>
+ <content section='display'><static_placeholder xmlns='http://www.blazesoft.com/template' type='localizedstring'>
+   <arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</arg>
+   <arg name='string-name'>executionMode</arg>
+  </static_placeholder>  <placeholder xmlns='http://www.blazesoft.com/display' relative='false' ref='ExeMode'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder></content>
+ <template name='template1'>
+  <ide-name>ExecutionModes</ide-name>
+  <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1IBbJ02ODol1ycsh7pzUBwhf6T6' name='Provider' id='Provider'>
+  </instantiation>
+  <value>
+   <provider>com.blazesoft.template.engine.provider.NdListProvider</provider>
+   <arg name='type'>string</arg>
+   <arg name='element'>Normal</arg>
+   <arg name='element'>Exclusive</arg>
+  </value>
+ </template>
+</template>

@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='HasEffectiveDate'>
+ <ide-name>HasEffectiveDate</ide-name>
+ <display-name>Effective Date</display-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter-selection name='Value Holder1' type='QkRVWmXLPVrLbm5jfjgBhuHGYYS.template3' ideName='EffectiveDateFilterList' min='1' max='1'>
+  </parameter-selection>
+ </parameters>
+ <family>Code Template</family>
+ <content section='srl'><placeholder xmlns='http://www.blazesoft.com/template' ref='Value Holder1' relative='false'/></content>
+ <content section='display'><placeholder xmlns='http://www.blazesoft.com/display' relative='false' ref='Value Holder1'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder> </content>
+ <template name='template1'>
+  <ide-name>AlwaysEffective</ide-name>
+  <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+  </instantiation>
+  <family>Code Template</family>
+  <content section='srl'>if (it is a SmartFormsRule) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>areDatesSet is a boolean initially (it as a SmartFormsRule).datesSetFlag.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (areDatesSet is true) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>else {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is true.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>}else if (it is a SmartFormsEventRule) then{<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>areDatesSet is a boolean initially (it as a SmartFormsEventRule).datesSetFlag.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (areDatesSet is true) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>else {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is true.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>}</content>
+  <content section='display'>  </content>
+ </template>
+ <template name='template2'>
+  <ide-name>EffectiveBetween</ide-name>
+  <display-name>Effective Between dates </display-name>
+  <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+  </instantiation>
+  <parameters>
+   <parameter name='FromDate' type='date' ideName='FromDate'>
+   </parameter>
+   <parameter name='ToDate' type='date' ideName='ToDate'>
+   </parameter>
+  </parameters>
+  <family>Code Template</family>
+  <content section='srl'>if (it is a SmartFormsRule) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>areDatesSet is a boolean initially (it as a SmartFormsRule).datesSetFlag.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (areDatesSet is true) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>fdate is a date initially (it as a SmartFormsRule).effectiveDateFrom.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>tdate is a date initially (it as a SmartFormsRule).effectiveDateTo.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is true.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (fdate is known and tdate is known) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if( (tdate is later than or equal to'<placeholder xmlns='http://www.blazesoft.com/template' ref='FromDate' relative='true'/>') and (fdate is earlier than or equal to '<placeholder xmlns='http://www.blazesoft.com/template' ref='ToDate' relative='true'/>') ) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is true.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>} else {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>} else {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is true.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>}else if (it is a SmartFormsEventRule) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>areDatesSet is a boolean initially (it as a SmartFormsEventRule).datesSetFlag.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (areDatesSet is true) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>fdate is a date initially (it as a SmartFormsEventRule).effectiveDateFrom.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>tdate is a date initially (it as a SmartFormsEventRule).effectiveDateTo.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is true.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (fdate is known and tdate is known) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if( (tdate is later than or equal to'<placeholder xmlns='http://www.blazesoft.com/template' ref='FromDate' relative='true'/>') and (fdate is earlier than or equal to '<placeholder xmlns='http://www.blazesoft.com/template' ref='ToDate' relative='true'/>') ) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is true.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>} else {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>} else {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is true.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>}</content>
+  <content section='display'> <placeholder xmlns='http://www.blazesoft.com/display' ref='FromDate' relative='true'>
+    <attribute>
+     <attribute-name>rangeRole</attribute-name>
+     <attribute-value>none</attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>samePage</attribute-name>
+     <attribute-value></attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>style</attribute-name>
+     <attribute-value>standardTextEdit</attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>none</attribute-name>
+     <attribute-value>none</attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>selectionMethod</attribute-name>
+     <attribute-value></attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>size</attribute-name>
+     <attribute-value></attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>password</attribute-name>
+     <attribute-value></attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>ref-type</attribute-name>
+     <attribute-value>0</attribute-value>
+    </attribute>
+   </placeholder> and <placeholder xmlns='http://www.blazesoft.com/display' ref='ToDate' relative='true'>
+    <attribute>
+     <attribute-name>rangeRole</attribute-name>
+     <attribute-value>none</attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>samePage</attribute-name>
+     <attribute-value></attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>style</attribute-name>
+     <attribute-value>standardTextEdit</attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>none</attribute-name>
+     <attribute-value>none</attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>selectionMethod</attribute-name>
+     <attribute-value></attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>size</attribute-name>
+     <attribute-value></attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>password</attribute-name>
+     <attribute-value></attribute-value>
+    </attribute>
+    <attribute>
+     <attribute-name>ref-type</attribute-name>
+     <attribute-value>0</attribute-value>
+    </attribute>
+   </placeholder></content>
+ </template>
+ <template name='template3'>
+  <ide-name>EffectiveDateFilters</ide-name>
+  <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1IBbJ02ODol1ycsh7pzUBwhf6T6' name='Provider' id='Provider'>
+  </instantiation>
+  <value>
+   <provider>com.blazesoft.template.engine.provider.NdTemplateListProvider</provider>
+   <arg name='element'>QkRVWmXLPVrLbm5jfjgBhuHGYYS.template2</arg>
+   <arg name='element'>QkRVWmXLPVrLbm5jfjgBhuHGYYS.template1</arg>
+  </value>
+ </template>
+</template>

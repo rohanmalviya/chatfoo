@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='Containsrule'>
+ <ide-name>ContainsRule</ide-name>
+ <display-name>Rule</display-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter name='RuleName' type='string' ideName='RuleName'>
+  </parameter>
+  <parameter name='RuleNameOperator' type='DJvi93JZhQolaIs5glrrjaYucnp' ideName='RuleNameOperator'>
+  </parameter>
+ </parameters>
+ <family>Code Template</family>
+ <content section='srl'>if (it is a PromInstance) then { <br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (it as an PromInstance).type is RomSchemaConstants.TYPE_SF_RULESET then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (it as a PromInstance).subType is equal to RomSchemaConstants.SUB_TYPE_NONE then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>enteredName is a string initially "<placeholder xmlns='http://www.blazesoft.com/template' ref='RuleName' relative='false'/>".<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>rulesetEntry is some SmartFormsRuleset.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>rulesetEntry = SmartFormsContentFactory.newRuleset(it as an PromInstance).<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>matches is a boolean initially false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>for each SmartFormsRule in rulesetEntry.rules do {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (it.name <placeholder xmlns='http://www.blazesoft.com/template' ref='RuleNameOperator' relative='false'/> enteredName) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>matches = true.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (matches is false) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>}</content>
+ <content section='display'><static_placeholder xmlns='http://www.blazesoft.com/template' type='localizedstring'>
+   <arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</arg>
+   <arg name='string-name'>containsRule</arg>
+  </static_placeholder> <placeholder xmlns='http://www.blazesoft.com/display' relative='false' ref='RuleNameOperator'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder>  <placeholder xmlns='http://www.blazesoft.com/display' relative='false' ref='RuleName'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value>standardTextEdit</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder></content>
+</template>
