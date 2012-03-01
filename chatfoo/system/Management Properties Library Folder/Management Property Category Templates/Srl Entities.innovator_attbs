@@ -1,0 +1,8 @@
+#Extended attributes for Innovator file-based repository (directory: 'Srl Entities')
+#Thu Mar 01 14:19:10 CST 2012
+guid=1tAbcPksfJuw62XuArifCQdfpQM
+innovatorDisplayName=SrlEntitiesFolder
+innovatorItemCreationId=halplunkett@gmail.com
+isNameLocalized=true
+isSystemDirectory=true
+resourceBundle=com.blazesoft.template.repository.properties.strings
