@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'ContainsPage')
+#Thu Mar 01 14:22:35 CST 2012
+contentType=Template
+guid=QmFEzgm9CExY2ed4SFngAdmfty9
+innovatorDisplayName=ContainsPage
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=SRL
+type=SRL Code

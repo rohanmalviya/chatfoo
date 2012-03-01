@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='HasError'>
+ <ide-name>HasError</ide-name>
+ <display-name>Error Message</display-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter name='Error' type='string' ideName='Error'>
+  </parameter>
+  <parameter name='ErrorOperator' type='DJvi93JZhQolaIs5glrrjaYucnp' ideName='ErrorOperator'>
+  </parameter>
+ </parameters>
+ <family>Code Template</family>
+ <content section='srl'>if (it is a SmartFormsRule) then { <br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>enteredError is a string initially "<placeholder xmlns='http://www.blazesoft.com/template' ref='Error' relative='false'/>".<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>error is a string.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>errorObject is some SmartFormsError initially (it as a SmartFormsRule).error.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (errorObject is known and errorObject is not null) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>error = errorObject.errorMessage.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (error is known) then{<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (not(error <placeholder xmlns='http://www.blazesoft.com/template' ref='ErrorOperator' relative='false'/> enteredError)) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>else {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>if (it is a SmartFormsEventRule) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>enteredError is a string initially "<placeholder xmlns='http://www.blazesoft.com/template' ref='Error' relative='false'/>".<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>error is a string initially (it as a SmartFormsEventRule).errorMessage.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (error is not null and error is not equal to "") then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (error <placeholder xmlns='http://www.blazesoft.com/template' ref='ErrorOperator' relative='false'/> enteredError) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is true.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>}</content>
+ <content section='display'><static_placeholder xmlns='http://www.blazesoft.com/template' type='localizedstring'>
+   <arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</arg>
+   <arg name='string-name'>hasError</arg>
+  </static_placeholder> <placeholder xmlns='http://www.blazesoft.com/display' relative='false' ref='ErrorOperator'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder>  <placeholder xmlns='http://www.blazesoft.com/display' relative='false' ref='Error'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value>standardTextEdit</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value>false</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder></content>
+</template>

@@ -1,0 +1,16 @@
+#Extended attributes for Innovator file-based repository (directory: 'HasEffectiveDate')
+#Thu Mar 01 14:22:35 CST 2012
+contentType=Template
+guid=QkRVWmXLPVrLbm5jfjgBhuHGYYS
+innovatorDisplayName=HasEffectiveDate
+innovatorItemCreationId=halplunkett@gmail.com
+isSystemTemplate=true
+managementProperty.Source\ Reference.filterVH=
+managementProperty.Source\ Reference.locationVH=
+managementProperty.Source\ Reference.releaseDateVH=
+managementProperty.Source\ Reference.repositoryAccessVH=
+managementProperty.Source\ Reference.repositoryNameVH=
+managementProperty.Source\ Reference.versionVH=
+subType=None
+target=SRL
+type=SRL Code

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template xmlns='http://www.blazesoft.com/template' name='DocumentType'>
+ <ide-name>DocumentType</ide-name>
+ <display-name>Document Type</display-name>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1ryqjy2wlawpW8dy391IVawONdo' name='Template' id='Template'>
+ </instantiation>
+ <instantiation xmlns='http://www.blazesoft.com/instantiation' template='18uqQPJXnTmKrAiLEOVcQMUAFmD' name='Entry' id='Entry'>
+  <instance ref='Source Reference'>
+   <instance ref='value'>
+    <instance ref='locationVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryNameVH'>
+     <value></value>
+    </instance>
+    <instance ref='versionVH'>
+     <value></value>
+    </instance>
+    <instance ref='filterVH'>
+     <value></value>
+    </instance>
+    <instance ref='releaseDateVH'>
+     <value></value>
+    </instance>
+    <instance ref='repositoryAccessVH'>
+     <value></value>
+    </instance>
+   </instance>
+  </instance>
+ </instantiation>
+ <parameters>
+  <parameter name='DocType' type='string' ideName='DocType'>
+  </parameter>
+  <parameter name='ClassType' type='DaXXKDDVRbVXB2PzHtbbFZauf4S.template4' ideName='ClassType'>
+  </parameter>
+  <parameter name='DocTypeOperator' type='DJvi93JZhQolaIs5glrrjaYucnp' ideName='DocTypeOperator'>
+  </parameter>
+ </parameters>
+ <family>Code Template</family>
+ <content section='srl'>if (it is a PromInstance) then { <br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>promIns is some PromInstance initially (it as a PromInstance).<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (promIns.type is RomSchemaConstants.TYPE_SF_RULESET) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (promIns.subType is equal to RomSchemaConstants.SUB_TYPE_NONE) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>LookupText is a string initially "<placeholder xmlns='http://www.blazesoft.com/template' ref='ClassType' relative='false'/>".<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if(LookupText = "BLANK") then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>LookupText = null.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>docResult is some Object.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>rulesetObj is some SmartFormsRuleset initially SmartFormsContentFactory.newRuleset(it as an PromInstance).<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>docResult = rulesetObj.documentTypeString as an Object.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (docResult is known) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>result  is a string initially unknown.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>result = (docResult as a string).<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (not(result = LookupText)) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>} else if (it is an SmartFormsEntity) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (it is an SmartFormsForm) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>LookupText is a string initially "<placeholder xmlns='http://www.blazesoft.com/template' ref='ClassType' relative='false'/>".<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if(LookupText = "BLANK") then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>LookupText = null.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>docResult is some Object.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>docResult = (it as an SmartFormsEntity).invoke( 100, "getDocumentType").<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (docResult is known) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>result  is a string initially unknown.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>result = (docResult as a string).<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (not(result = LookupText)) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>} else if(it is an SmartFormsPage) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>LookupText is a string initially "<placeholder xmlns='http://www.blazesoft.com/template' ref='ClassType' relative='false'/>".<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if(LookupText = "BLANK") then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>LookupText = null.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>docResult is some Object.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>docResult = (it as an SmartFormsEntity).invoke( 200, "getDocumentType").<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (docResult is known) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>result  is a string initially unknown.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>result = (docResult as a string).<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>if (not(result = LookupText)) then {<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>doesMatchFilters is false.<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/><tab xmlns='http://www.blazesoft.com/template'/>}<br xmlns='http://www.blazesoft.com/template'/>}</content>
+ <content section='display'><static_placeholder xmlns='http://www.blazesoft.com/template' type='localizedstring'>
+   <arg name='resource-bundle'>com.blazesoft.template.repository.query.srl.strings</arg>
+   <arg name='string-name'>documentType</arg>
+  </static_placeholder> <placeholder xmlns='http://www.blazesoft.com/display' relative='false' ref='ClassType'>
+   <attribute>
+    <attribute-name>rangeRole</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>samePage</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>style</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>none</attribute-name>
+    <attribute-value>none</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>selectionMethod</attribute-name>
+    <attribute-value>useDhtmlChoiceBox</attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>size</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>password</attribute-name>
+    <attribute-value></attribute-value>
+   </attribute>
+   <attribute>
+    <attribute-name>ref-type</attribute-name>
+    <attribute-value>0</attribute-value>
+   </attribute>
+  </placeholder></content>
+ <template name='template4'>
+  <ide-name>DocumentTypeList</ide-name>
+  <instantiation xmlns='http://www.blazesoft.com/instantiation' template='1IBbJ02ODol1ycsh7pzUBwhf6T6' name='Provider' id='Provider'>
+  </instantiation>
+  <value>
+   <provider>com.blazesoft.template.engine.provider.NdListProvider</provider>
+   <arg name='type'>string</arg>
+   <arg name='element'>BLANK</arg>
+   <arg name='list'>8bTBa9KtxytpRfwievfee8QQjg3</arg>
+  </value>
+ </template>
+</template>
