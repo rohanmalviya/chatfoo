@@ -1,0 +1,1 @@
+ChatFoo - Java based client for SPiN. Developed using Java SWT.
